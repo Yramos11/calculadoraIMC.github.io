@@ -1,0 +1,196 @@
+body{
+
+    background: linear-gradient(90deg, #b2fbff 50%, #f8f7f7 50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CABEÇALHO */
+
+header{
+
+    display: flex;
+    justify-content: center;
+}
+
+header h1{
+
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: .7em 0;
+}
+
+header p{
+
+   align-self: center;
+   margin: 1em 0 0 1em;
+   color: #9e9e9e;
+}
+
+.paragrafoImc:hover{
+
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.descricaoImc p{
+
+    max-width: 10em;
+    position: absolute;
+    top: 60px;
+    right: 250px;
+    background: #ebebeb;
+    color: #5c5c5c;
+    padding: 1em;
+    line-height: 1.3em;
+    border-radius: 5px;
+}
+
+.aparecer{
+
+    display: none;
+}
+
+/* PRINCIPAL */
+
+.principal{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.divImg{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divImg img{
+
+    height: 50%;
+}
+
+.divForm{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divForm h1{
+
+    margin: 1.5em 0;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.divForm .form{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.divForm .form label{
+
+    display: block;
+    margin-bottom: .4em;
+    font-size: 1.3em;
+}
+
+.divForm .form input{
+
+   outline: none;
+   font-size: 1.2em;
+   padding: 0.5em;
+   border-radius: 5px;
+}
+
+.divForm .form p{
+
+    color: red;
+    margin-top: .2em;
+    margin-bottom: 1em;
+}
+
+.btnCalcular{
+
+    align-self: center;
+}
+
+.btnCalcular button{
+
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em;
+    background: #b2fbff;
+    border-color: #bbbbbb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnCalcular button:hover{
+
+    background: #9ee3ff
+}
+
+.mensagem{
+
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+
+.frase{
+
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+
+@media(max-width: 400px){
+
+    body{
+
+        background: #f3f3f3;
+    }
+
+    /* CABEÇALHO */
+
+    header h1{
+
+        font-size: 1.7em;
+        padding-bottom: 0;
+    }
+
+    .paragrafoImc{
+
+        display: none;
+    }
+
+    /* PRINCIPAL */
+
+    .principal{
+
+        grid-template-columns: none;
+    }
+
+    .divImg{
+
+        display: none;
+    }
+
+    .divForm h1{
+
+        font-size: 1.3em;
+    }
+
+    .divForm .form label{
+
+        font-size: 1.1em;
+    }
+
+    .divForm .form input{
+
+        font-size: 1em;
+    }
+}
